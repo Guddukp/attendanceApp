@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.text.InputType;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageButton;
 
@@ -18,18 +19,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        et_pass = (EditText)findViewById(R.id.et_pass);
+        et_pass = (EditText) findViewById(R.id.et_pass);
 
         bind();
-
     }
 
-    void bind(){
+    void bind() {
         //Submit Button
         findViewById(R.id.bt_login).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Snackbar.make(v,"Log In Recieved", Snackbar.LENGTH_INDEFINITE).setAction("OKAY", new View.OnClickListener() {
+                Snackbar.make(v, "Log In Recieved", Snackbar.LENGTH_INDEFINITE).setAction("OKAY", new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
 
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.bt_register).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Snackbar.make(v,"Sign Up Recieved", Snackbar.LENGTH_INDEFINITE).setAction("OKAY", new View.OnClickListener() {
+                Snackbar.make(v, "Sign Up Recieved", Snackbar.LENGTH_INDEFINITE).setAction("OKAY", new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
 
@@ -56,11 +56,11 @@ public class MainActivity extends AppCompatActivity {
                @Override
                public boolean onTouch(View v, MotionEvent event) {
 
-                   if(event.getAction() == MotionEvent.ACTION_DOWN){
+                   if (event.getAction() == MotionEvent.ACTION_DOWN) {
                        et_pass.setInputType(InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
                        v.setBackgroundResource(R.drawable.baseline_visibility_off_black_18dp);
                        return true;
-                   }else if(event.getAction() == MotionEvent.ACTION_UP){
+                   } else if (event.getAction() == MotionEvent.ACTION_UP) {
                        et_pass.setInputType(InputType.TYPE_CLASS_TEXT |
                                InputType.TYPE_TEXT_VARIATION_PASSWORD);
                        v.setBackgroundResource(R.drawable.baseline_visibility_black_18dp);
