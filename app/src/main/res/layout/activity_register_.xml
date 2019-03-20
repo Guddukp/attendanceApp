@@ -47,7 +47,7 @@
             android:inputType="textPassword"
             />
         <ImageButton
-            android:id="@+id/ib_show_pass"
+            android:id="@+id/rb_show_pass"
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_alignParentRight="true"
@@ -66,7 +66,7 @@
             android:hint="Confirm Password"
             android:inputType="textPassword"/>
         <ImageButton
-            android:id="@+id/ib_show_confirm_pass"
+            android:id="@+id/rb_show_confirm_pass"
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_alignParentRight="true"
@@ -75,7 +75,7 @@
             android:src="@drawable/baseline_visibility_black_18dp"/>
     </RelativeLayout>
     <Button
-        android:id="@+id/bt_login"
+        android:id="@+id/rt_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -93,7 +93,7 @@
         android:baselineAligned="true">
 
         <Button
-            android:id="@+id/bt_register"
+            android:id="@+id/rt_login"
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

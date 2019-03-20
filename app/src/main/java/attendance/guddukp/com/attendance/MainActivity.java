@@ -12,7 +12,7 @@ import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText et_pass;
+    private EditText et_pass;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
