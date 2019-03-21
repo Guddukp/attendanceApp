@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,6 +33,20 @@ public class MainActivity extends AppCompatActivity {
                 Snackbar.make(v, "Log In Recieved", Snackbar.LENGTH_INDEFINITE).setAction("OKAY", new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
+
+                    }
+                }).show();
+            }
+        });
+
+        //Forgot password
+        findViewById(R.id.forgot_pass).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Snackbar.make(v,"Clicked Forgot_pass",Snackbar.LENGTH_INDEFINITE).setAction("Click here", new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Toast.makeText(MainActivity.this, "changed password", Toast.LENGTH_SHORT).show();
 
                     }
                 }).show();

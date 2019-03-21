@@ -80,6 +80,14 @@
             android:text="Log in"
             android:textColor="@color/ButtonText"
             android:textSize="16dp" />
+        <TextView
+            android:id="@+id/forgot_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="forgot password?"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#F71807"
+            android:paddingVertical="0dp"/>
     </LinearLayout>
 
     <LinearLayout
