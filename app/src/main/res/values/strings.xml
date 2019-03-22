@@ -1,5 +1,16 @@
 <resources>
     <string name="app_name">Attendance</string>
+    <string name="email_placeholder">Email</string>
+    <string name="pass_placeholder">Password</string>
+    <string name="bt_signIn">LOG IN</string>
+    <string name="bt_reg">REGISTER</string>
+    <string name="forgot">Forgot Password?</string>
+    <string name="repass">Re-Enter Password</string>
+    <string name="name">Name</string>
+    <string name="roll">Roll no</string>
+
+    <string name="cd_showHide">Show Hide</string>
+
     <string name="title_activity_admin_">Admin_Activity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
