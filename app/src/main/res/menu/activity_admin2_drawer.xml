@@ -17,7 +17,7 @@
             android:icon="@drawable/ic_import_contacts_black_24dp"
             android:title="Course" />
         <item
-            android:id="@+id/attendace"
+            android:id="@+id/attendance"
             android:icon="@drawable/ic_assessment_black_24dp"
             android:title="Attendance" />
         <item

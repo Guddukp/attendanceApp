@@ -17,7 +17,7 @@ public class Register_Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_);
-        rt_pass=(EditText)findViewById(R.id.et_pass);
+        rt_pass=(EditText)findViewById(R.id.rt_pass);
         confirm_pass=(EditText)findViewById(R.id.Confirm_Pass);
         bindActivity();
     }

@@ -2,7 +2,7 @@
 <resources>
     <string-array name="login_types">
         <item>Student</item>
-        <item>Staff</item>
+        <item>Teacher</item>
         <item>Admin</item>
     </string-array>
 

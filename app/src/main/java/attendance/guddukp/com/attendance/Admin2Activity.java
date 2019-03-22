@@ -1,5 +1,6 @@
 package attendance.guddukp.com.attendance;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -12,17 +13,20 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class Admin2Activity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin2);
+        String name=getIntent().getExtras().getString("name");
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        // Get intent, action and MIME type
+        Intent intent = getIntent();
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,7 +68,7 @@ public class Admin2Activity extends AppCompatActivity
 
         } else if (id == R.id.course) {
 
-        } else if (id == R.id.attendace) {
+        } else if (id == R.id.attendance) {
 
         } else if (id == R.id.lod_out) {
 
@@ -74,4 +78,5 @@ public class Admin2Activity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
 }

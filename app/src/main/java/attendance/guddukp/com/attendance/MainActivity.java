@@ -1,27 +1,29 @@
 package attendance.guddukp.com.attendance;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.InputType;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.Spinner;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
-
-    private EditText et_pass;
-
+public class MainActivity extends AppCompatActivity  {
+private EditText et_pass;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        et_pass = (EditText) findViewById(R.id.et_pass);
-
+        et_pass=findViewById(R.id.et_pass);
         bind();
     }
 
