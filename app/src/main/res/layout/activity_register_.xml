@@ -5,77 +5,83 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingVertical="0dp"
-    android:gravity="bottom"
-    tools:context=".Register_Activity">
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
+    android:paddingVertical="8dp"
     android:paddingHorizontal="30dp"
-    android:paddingVertical="8dp">
+    android:gravity="bottom"
+    tools:context=".Register_Activity" tools:targetApi="o">
+
     <EditText
-        android:id="@+id/id_no"
+        android:id="@+id/roll_r"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginVertical="20dp"
-        android:hint="Id No."
+        android:hint="@string/roll"
+        android:importantForAutofill="no"
         android:inputType="number"/>
     <EditText
-        android:id="@+id/rt_name"
+        android:id="@+id/et_name_r"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginVertical="20dp"
-        android:hint="Full Name"
+        android:hint="@string/name"
+        android:importantForAutofill="no"
         android:inputType="text"/>
     <EditText
-        android:id="@+id/rt_email"
+        android:id="@+id/et_email_r"
         android:layout_width="match_parent"
         android:layout_height="40dp"
+        android:importantForAutofill="no"
         android:layout_marginVertical="20dp"
-        android:hint="Email"
+        android:hint="@string/email_placeholder"
         android:inputType="textWebEmailAddress"/>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <EditText
-            android:id="@+id/rt_pass"
+            android:id="@+id/et_pass_r"
             android:layout_width="match_parent"
             android:layout_height="40dp"
+            android:importantForAutofill="no"
             android:layout_marginVertical="20dp"
-            android:hint="Password"
+            android:hint="@string/pass_placeholder"
             android:inputType="textPassword"
             />
         <ImageButton
-            android:id="@+id/rb_show_pass"
+            android:id="@+id/ib_show_pass_r"
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
+            android:importantForAutofill="no"
             android:layout_margin="10dp"
-            android:src="@drawable/baseline_visibility_black_18dp"/>
+            android:src="@drawable/baseline_visibility_black_18dp"
+            android:contentDescription="@string/cd_showHide"
+            android:layout_alignParentEnd="true" />
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <EditText
-            android:id="@+id/Confirm_Pass"
+            android:id="@+id/et_rePass_r"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginVertical="20dp"
-            android:hint="Confirm Password"
-            android:inputType="textPassword"/>
+            android:hint="@string/repass"
+            android:inputType="textPassword"
+            android:importantForAutofill="no" />
         <ImageButton
-            android:id="@+id/rb_show_confirm_pass"
+            android:id="@+id/ib_show_confirm_pass_r"
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_margin="10dp"
-            android:src="@drawable/baseline_visibility_black_18dp"/>
+            android:src="@drawable/baseline_visibility_black_18dp"
+            android:contentDescription="@string/cd_showHide"
+            android:layout_alignParentEnd="true" />
     </RelativeLayout>
     <Button
-        android:id="@+id/rt_register"
+        android:id="@+id/bt_register_r"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -83,24 +89,7 @@
         android:background="@color/ButtonBG"
         android:paddingHorizontal="40dp"
         android:paddingVertical="16dp"
-        android:text="Register"
+        android:text="@string/bt_reg"
         android:textColor="@color/ButtonText"
-        android:textSize="16dp" />
-</LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:baselineAligned="true">
-
-        <Button
-            android:id="@+id/rt_login"
-
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/ButtonBG"
-            android:paddingVertical="10dp"
-            android:text="log in"
-            android:textColor="@color/ButtonText"
-            android:textSize="16dp" />
-    </LinearLayout>
+        android:textSize="16sp" />
 </LinearLayout>

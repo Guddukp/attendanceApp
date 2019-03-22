@@ -5,4 +5,5 @@
     <color name="colorAccent">#111</color>
     <color name="ButtonText">#e1e1e1</color>
     <color name="ButtonBG">#111</color>
+    <color name="error">#F71807</color>
 </resources>
