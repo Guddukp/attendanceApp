@@ -8,7 +8,7 @@
     android:paddingVertical="8dp"
     android:paddingHorizontal="30dp"
     android:gravity="bottom"
-    tools:context=".Register_Activity" tools:targetApi="o">
+    tools:context=".RegisterActivity" tools:targetApi="o">
 
     <EditText
         android:id="@+id/roll_r"
