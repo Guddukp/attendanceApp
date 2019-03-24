@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_student"
+            android:icon="@drawable/ic_group_black_24dp"
+            android:title="Student" />
+        <item
+            android:id="@+id/nav_teacher"
+            android:icon="@drawable/teching"
+            android:title="Teacher" />
+        <item
+            android:id="@+id/nav_course"
+            android:icon="@drawable/ic_import_contacts_black_24dp"
+            android:title="Course" />
+        <item
+            android:id="@+id/nav_attendance"
+            android:icon="@drawable/ic_assessment_black_24dp"
+            android:title="Attendance" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="Logout" />
+
+    </group>
+
+
+</menu>
