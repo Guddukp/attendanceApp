@@ -1,63 +1,36 @@
-package attendance.guddukp.com.attendance;
+package activity;
 
-import android.app.Activity;
-import android.content.Intent;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.InputType;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.EditText;
-import android.widget.ImageButton;
-import android.widget.Spinner;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity  {
+import attendance.guddukp.com.attendance.R;
+
+public class RegisterActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        bind();
+        setContentView(R.layout.activity_register_);
+        bindActivity();
     }
 
-    void bind() {
-        //Submit Button
-        findViewById(R.id.bt_login).setOnClickListener(new View.OnClickListener() {
+    private void bindActivity() {
+        //Register button
+        findViewById(R.id.bt_register_r).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /*Snackbar.make(v, "Log In Recieved", Snackbar.LENGTH_INDEFINITE).setAction("OKAY", new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-
-                    }
-                }).show();*/
-                Intent intent = new Intent(MainActivity.this,RegisterActivity.class);
-                startActivity(intent);
+                Toast.makeText(RegisterActivity.this, "Sign Up Recived", Toast.LENGTH_SHORT).show();
             }
         });
 
-        //Forgot password
-        findViewById(R.id.forgot_pass).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Snackbar.make(v,"Clicked Forgot_pass",Snackbar.LENGTH_INDEFINITE).setAction("Click here", new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Toast.makeText(MainActivity.this, "changed password", Toast.LENGTH_SHORT).show();
-
-                    }
-                }).show();
-            }
-        });
-
-        //Visibility Toggle
-        showHidePass(R.id.et_pass,R.id.ib_show_pass);
+        //Visibility Toggle Confirm pass
+        showHidePass(R.id.et_pass_r, R.id.ib_show_pass_r);
+        showHidePass(R.id.et_rePass_r, R.id.ib_show_confirm_pass_r);
     }
 
     public void showHidePass(int p,int i){
@@ -84,5 +57,4 @@ public class MainActivity extends AppCompatActivity  {
                                            }
         );
     }
-
 }

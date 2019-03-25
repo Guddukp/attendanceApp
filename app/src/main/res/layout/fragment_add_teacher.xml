@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragment.BlankFragment"
+    android:orientation="vertical"
+    android:paddingHorizontal="30dp"
+    android:paddingBottom="20dp">
+
+    <EditText
+        android:id="@+id/et_name_t"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginVertical="20dp"
+        android:hint="@string/name"
+        android:importantForAutofill="no"
+        android:inputType="text"/>
+    <EditText
+        android:id="@+id/et_email_S"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:importantForAutofill="no"
+        android:layout_marginVertical="20dp"
+        android:hint="@string/email_placeholder"
+        android:inputType="textWebEmailAddress"/>
+    <EditText
+        android:id="@+id/et_CONTACT_t"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:importantForAutofill="no"
+        android:layout_marginVertical="20dp"
+        android:hint="@string/contact"
+        android:inputType="textWebEmailAddress"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/bt_add_teacher_t"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:background="@color/ButtonBG"
+            android:layout_gravity="bottom"
+            android:paddingHorizontal="40dp"
+            android:paddingVertical="16dp"
+            android:text="@string/add_teacher"
+            android:textAlignment="center"
+            android:textColor="@color/ButtonText"
+            android:textSize="16sp" />
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,140 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="30dp"
+    android:paddingBottom="20dp"
+    android:gravity="bottom"
+    tools:targetApi="o"
+    tools:context="fragment.AddstudentFragment">
+    <EditText
+        android:id="@+id/roll_S"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginVertical="20dp"
+        android:hint="@string/roll"
+        android:importantForAutofill="no"
+        android:inputType="number"/>
+    <EditText
+        android:id="@+id/et_name_S"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginVertical="20dp"
+        android:hint="@string/name"
+        android:importantForAutofill="no"
+        android:inputType="text"/>
+    <EditText
+        android:id="@+id/et_email_S"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:importantForAutofill="no"
+        android:layout_marginVertical="20dp"
+        android:hint="@string/email_placeholder"
+        android:inputType="textWebEmailAddress"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/et_english_s"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginVertical="20dp"
+                    android:hint="@string/english_code"
+                    android:textAlignment="center" />
+
+                <CheckBox
+                    android:id="@+id/cb_english_s"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignLeft="@id/et_rePass_r"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/et_math_s"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginVertical="20dp"
+                    android:hint="@string/math_code"
+                    android:textAlignment="center" />
+
+                <CheckBox
+                    android:id="@+id/cb_math_s"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignLeft="@id/et_rePass_r"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/et_java_s"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginVertical="20dp"
+                    android:hint="@string/java_code"
+                    android:textAlignment="center" />
+
+                <CheckBox
+                    android:id="@+id/cb_java_s"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignLeft="@id/et_rePass_r"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/et_CONTACT_S"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:importantForAutofill="no"
+        android:layout_marginVertical="20dp"
+        android:hint="@string/contact"
+        android:inputType="textWebEmailAddress"/>
+    <TextView
+        android:id="@+id/tv_email_r"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:importantForAutofill="no"
+        android:layout_marginVertical="20dp"
+        android:hint="@string/slect_course"
+        android:inputType="textWebEmailAddress"/>
+
+    <Button
+        android:id="@+id/bt_add_student_r"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:background="@color/ButtonBG"
+        android:paddingHorizontal="40dp"
+        android:textAlignment="center"
+        android:paddingVertical="16dp"
+        android:gravity="bottom"
+        android:text="@string/add_student"
+        android:textColor="@color/ButtonText"
+        android:textSize="16sp" />
+</LinearLayout>

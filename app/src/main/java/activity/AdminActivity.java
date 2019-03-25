@@ -1,13 +1,9 @@
-package attendance.guddukp.com.attendance;
+package activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -16,12 +12,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import fragment.StudentFragment;
-import fragment.TeacherFragment;
+import attendance.guddukp.com.attendance.R;
 
 public class AdminActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -73,11 +67,11 @@ public class AdminActivity extends AppCompatActivity
         switch (id){
             case R.id.nav_student:
             // Handle the camera action
-                Intent intent=new Intent(this,MainActivity.class);
+                Intent intent=new Intent(this, MainActivity.class);
                 startActivity(intent);
             break;
             case R.id.nav_teacher:
-                Intent intent1=new Intent(this,RegisterActivity.class);
+                Intent intent1=new Intent(this, RegisterActivity.class);
                 startActivity(intent1);
              break;
             case R.id.nav_attendance:

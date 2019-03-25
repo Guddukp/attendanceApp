@@ -8,6 +8,14 @@
     <string name="repass">Re-Enter Password</string>
     <string name="name">Name</string>
     <string name="roll">Roll no</string>
+    <string name="add_student">Add Student</string>
+    <string name="add_teacher">Add Teacher</string>
+    <string name="corse_code">Course Code</string>
+    <string name="slect_course">Slect Course:</string>
+    <string name="english_code">E101</string>
+    <string name="math_code">M101</string>
+    <string name="java_code">J101</string>
+    <string name="contact">Contact Number</string>
     <string name="student">Student</string>
     <string name="teacher">Teacher</string>
     <string name="course">Course</string>
