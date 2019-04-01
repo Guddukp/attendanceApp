@@ -8,6 +8,7 @@ import android.text.InputType;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -21,10 +22,6 @@ import attendance.guddukp.com.attendance.R;
 
 public class MainActivity extends AppCompatActivity  {
 
-    private RequestQueue mRequestQueue;
-    private StringRequest mStringRequest;
-    private String url = "https://theguysite.000webhostapp.com/login.php";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,8 +34,7 @@ public class MainActivity extends AppCompatActivity  {
         findViewById(R.id.bt_login).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                sendAndRequestResponse();
+                sendAndRequestResponse(((TextView)findViewById(R.id.et_email)).getText().toString(),((TextView)findViewById(R.id.et_pass)).getText().toString());
             }
         });
 
@@ -85,12 +81,13 @@ public class MainActivity extends AppCompatActivity  {
         );
     }
 
-    private void sendAndRequestResponse() {
+    private void sendAndRequestResponse(String email, String pass) {
 
-        //RequestQueue initialized
+        RequestQueue mRequestQueue;
+        StringRequest mStringRequest;
+        String url = "https://theguysite.000webhostapp.com/login.php?id="+email+"&pass="+pass;
+
         mRequestQueue = Volley.newRequestQueue(this);
-
-        //String Request initialized
 
         mStringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
             @Override
