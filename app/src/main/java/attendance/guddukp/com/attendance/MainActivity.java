@@ -10,9 +10,20 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+
 import attendance.guddukp.com.attendance.R;
 
 public class MainActivity extends AppCompatActivity  {
+
+    private RequestQueue mRequestQueue;
+    private StringRequest mStringRequest;
+    private String url = "https://theguysite.000webhostapp.com/login.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,14 +37,8 @@ public class MainActivity extends AppCompatActivity  {
         findViewById(R.id.bt_login).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /*Snackbar.make(v, "Log In Recieved", Snackbar.LENGTH_INDEFINITE).setAction("OKAY", new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
 
-                    }
-                }).show();*/
-                Intent intent = new Intent(MainActivity.this, AdminActivity.class);
-                startActivity(intent);
+                sendAndRequestResponse();
             }
         });
 
@@ -61,26 +66,52 @@ public class MainActivity extends AppCompatActivity  {
 
         findViewById(i).setOnTouchListener(new View.OnTouchListener() {
 
-                                               @Override
-                                               public boolean onTouch(View v, MotionEvent event) {
-                                                   if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                                                       pass.setInputType(InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
-                                                       v.setBackgroundResource(R.drawable.baseline_visibility_off_black_18dp);
-                                                       return true;
-                                                   } else if (event.getAction() == MotionEvent.ACTION_UP) {
-                                                       pass.setInputType(InputType.TYPE_CLASS_TEXT |
-                                                               InputType.TYPE_TEXT_VARIATION_PASSWORD);
-                                                       v.setBackgroundResource(R.drawable.baseline_visibility_black_18dp);
-                                                       return true;
-                                                   }
+               @Override
+               public boolean onTouch(View v, MotionEvent event) {
+                   if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                       pass.setInputType(InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
+                       v.setBackgroundResource(R.drawable.baseline_visibility_off_black_18dp);
+                       return true;
+                   } else if (event.getAction() == MotionEvent.ACTION_UP) {
+                       pass.setInputType(InputType.TYPE_CLASS_TEXT |
+                               InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                       v.setBackgroundResource(R.drawable.baseline_visibility_black_18dp);
+                       return true;
+                   }
 
-                                                   return false;
-                                               }
-                                           }
+                   return false;
+               }
+           }
         );
     }
 
+    private void sendAndRequestResponse() {
 
+        //RequestQueue initialized
+        mRequestQueue = Volley.newRequestQueue(this);
+
+        //String Request initialized
+
+        mStringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+
+                if(response.toString().toLowerCase().equals("success")){
+                    Intent i = new Intent(getApplicationContext(),AdminActivity.class);
+                    startActivity(i);
+                }else {
+                    Toast.makeText(getApplicationContext(), "Invalid Username/Password", Toast.LENGTH_LONG).show();//display the response on screen
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+
+            }
+        });
+
+        mRequestQueue.add(mStringRequest);
+    }
 
 
 }
