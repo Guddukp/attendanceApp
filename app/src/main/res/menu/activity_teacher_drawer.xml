@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home_t"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="home" />
+        <item
+            android:id="@+id/nav_student_t"
+            android:icon="@drawable/ic_group_black_24dp"
+            android:title="Student" />
+        <item
+            android:id="@+id/nav_take_attendance"
+            android:icon="@drawable/teching"
+            android:title="@string/take_attandance" />
+        <item
+            android:id="@+id/nav_View_attendance_t"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            android:title="@string/view_attandance" />
+        <item
+            android:id="@+id/nav_Change_pass"
+            android:icon="@drawable/ic_vpn_key_black_24dp"
+            android:title="@string/change_password" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="Logout" />
+
+    </group>
+
+</menu>

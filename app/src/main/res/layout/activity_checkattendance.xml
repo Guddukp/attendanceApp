@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="30dp"
+    android:paddingBottom="20dp"
+    tools:context=".CheckattendanceActivity">
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_startdate_a"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:importantForAutofill="no"
+            android:layout_marginVertical="20dp"
+            android:hint="@string/start_date"
+            android:inputType="text"
+            />
+        <CalendarView
+            android:id="@+id/cv_startdate_a"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:importantForAutofill="no"
+            android:layout_margin="10dp"
+            android:src="@drawable/baseline_visibility_black_18dp"
+            android:contentDescription="@string/cd_showHide"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_enddate_a"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginVertical="20dp"
+            android:hint="@string/end_date"
+            android:inputType="textPassword"
+            />
+        <CalendarView
+            android:id="@+id/cv_enddate_a"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:importantForAutofill="no"
+            android:layout_margin="10dp"
+            android:src="@drawable/baseline_visibility_black_18dp"
+            android:contentDescription="@string/cd_showHide"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/attendance"/>
+
+</LinearLayout>

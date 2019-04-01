@@ -13,12 +13,12 @@ import attendance.guddukp.com.attendance.R;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link CourseFragment2.OnFragmentInteractionListener} interface
+ * {@link Take_attendanceFragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link CourseFragment2#newInstance} factory method to
+ * Use the {@link Take_attendanceFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class CourseFragment2 extends Fragment {
+public class Take_attendanceFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -30,7 +30,7 @@ public class CourseFragment2 extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public CourseFragment2() {
+    public Take_attendanceFragment() {
         // Required empty public constructor
     }
 
@@ -40,11 +40,11 @@ public class CourseFragment2 extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment CourseFragment2.
+     * @return A new instance of fragment Take_attendanceFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static CourseFragment2 newInstance(String param1, String param2) {
-        CourseFragment2 fragment = new CourseFragment2();
+    public static Take_attendanceFragment newInstance(String param1, String param2) {
+        Take_attendanceFragment fragment = new Take_attendanceFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -65,7 +65,7 @@ public class CourseFragment2 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_course_fragment2, container, false);
+        return inflater.inflate(R.layout.fragment_take_attendance, container, false);
     }
 
     // TODO: Rename method, update argument and hook method into UI event

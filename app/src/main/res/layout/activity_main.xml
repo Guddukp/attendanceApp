@@ -9,7 +9,7 @@
     android:paddingBottom="20dp"
     tools:targetApi="o"
     android:gravity="bottom"
-    tools:context="activity.MainActivity">
+    tools:context="MainActivity">
 
         <ImageView
             android:layout_width="wrap_content"

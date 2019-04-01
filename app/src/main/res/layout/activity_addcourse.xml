@@ -1,8 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="fragment.BlankFragment"
+    tools:context="fragment.TeacherFragment"
     android:orientation="vertical"
     android:paddingHorizontal="30dp"
     android:paddingBottom="20dp">
@@ -12,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginVertical="20dp"
-        android:hint="@string/corse_code"
+        android:hint="@string/course_code"
         android:importantForAutofill="no"
         android:inputType="text"/>
     <EditText
@@ -21,15 +22,15 @@
         android:layout_height="40dp"
         android:importantForAutofill="no"
         android:layout_marginVertical="20dp"
-        android:hint="@string/email_placeholder"
-        android:inputType="textWebEmailAddress"/>
+        android:hint="@string/course_name"
+        android:inputType="text"/>
     <EditText
         android:id="@+id/et_CONTACT_t"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:importantForAutofill="no"
         android:layout_marginVertical="20dp"
-        android:hint="@string/contact"
+        android:hint="@string/teacher"
         android:inputType="text"/>
     <FrameLayout
         android:layout_width="match_parent"
@@ -44,7 +45,7 @@
             android:layout_gravity="bottom"
             android:paddingHorizontal="40dp"
             android:paddingVertical="16dp"
-            android:text="@string/add_teacher"
+            android:text="@string/course_add"
             android:textAlignment="center"
             android:textColor="@color/ButtonText"
             android:textSize="16sp" />
