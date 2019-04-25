@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import attendance.guddukp.com.attendance.AddcourseActivity;
 import attendance.guddukp.com.attendance.AddteacherActivity;
 import attendance.guddukp.com.attendance.CheckattendanceActivity;
 import attendance.guddukp.com.attendance.R;
@@ -29,7 +30,7 @@ public class AttendanceFragment extends Fragment {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent in = new Intent(getActivity(), CheckattendanceActivity.class);
+                Intent in = new Intent(getActivity(), CheckattendanceActivity .class);
                 startActivity(in);
             }
         });
