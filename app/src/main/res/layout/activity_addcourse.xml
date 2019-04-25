@@ -17,7 +17,7 @@
         android:importantForAutofill="no"
         android:inputType="text"/>
     <EditText
-        android:id="@+id/et_email_S"
+        android:id="@+id/et_name_S"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:importantForAutofill="no"
