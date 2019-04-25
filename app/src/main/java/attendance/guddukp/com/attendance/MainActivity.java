@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity  {
 
                     }
                 }).show();
+
             }
         });
 
@@ -82,6 +83,7 @@ public class MainActivity extends AppCompatActivity  {
     }
 
     private void sendAndRequestResponse(String email, String pass) {
+
 
         RequestQueue mRequestQueue;
         StringRequest mStringRequest;

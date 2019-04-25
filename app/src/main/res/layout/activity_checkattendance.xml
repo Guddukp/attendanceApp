@@ -25,11 +25,12 @@
             android:id="@+id/cv_startdate_a"
             android:layout_width="20dp"
             android:layout_height="20dp"
+
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:importantForAutofill="no"
             android:layout_margin="10dp"
-            android:src="@drawable/baseline_visibility_black_18dp"
+            android:src="@drawable/ic_menu_camera"
             android:contentDescription="@string/cd_showHide"
             android:layout_alignParentEnd="true" />
     </RelativeLayout>
@@ -53,7 +54,7 @@
             android:layout_centerVertical="true"
             android:importantForAutofill="no"
             android:layout_margin="10dp"
-            android:src="@drawable/baseline_visibility_black_18dp"
+            android:src="@drawable/ic_menu_camera"
             android:contentDescription="@string/cd_showHide"
             android:layout_alignParentEnd="true" />
     </RelativeLayout>

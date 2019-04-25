@@ -18,12 +18,6 @@ import attendance.guddukp.com.attendance.R;
     public CourseFragment() {
         // Required empty public constructor
     }
-
-
-
-
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

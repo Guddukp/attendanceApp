@@ -11,27 +11,32 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".CheckattendanceActivity"></activity>
-        <activity android:name=".AddcourseActivity" />
+        <activity android:name=".CheckattendanceActivity"
+            android:theme="@style/AppTheme"></activity>
+        <activity android:name=".AddcourseActivity"
+            android:theme="@style/AppTheme"/>
         <activity android:name=".AddteacherActivity" />
         <activity android:name=".AddstudentActivity" />
         <activity
             android:name=".Teacher_mainActivity"
             android:label="@string/title_activity_teacher"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme" >
+
+        </activity>
         <activity
             android:name=".AdminActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/title_activity_admin_"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_admin_"
+            android:theme="@style/AppTheme">
+
         </activity>
         <activity android:name=".RegisterActivity" />
     </application>

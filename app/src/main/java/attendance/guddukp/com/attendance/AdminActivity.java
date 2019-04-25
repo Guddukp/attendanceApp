@@ -70,18 +70,16 @@ public class AdminActivity extends AppCompatActivity
                     .replace(R.id.content_frame,teacherFragment)
                     .addToBackStack(null)
                     .commit();
-
-        } else if (id == R.id.nav_attendance) {
-             AttendanceFragment attendanceFragment=new AttendanceFragment();
-            getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.content_frame, attendanceFragment)
-                    .addToBackStack(null)
-                    .commit();
-
         } else if (id == R.id.nav_course) {
             CourseFragment courseFragment=new CourseFragment();
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.content_frame,courseFragment)
+                    .addToBackStack(null)
+                    .commit();
+        } else if (id == R.id.nav_attendance) {
+            AttendanceFragment attendanceFragment=new AttendanceFragment();
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.content_frame, attendanceFragment)
                     .addToBackStack(null)
                     .commit();
 
