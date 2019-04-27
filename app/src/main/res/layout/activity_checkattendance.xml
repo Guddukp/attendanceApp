@@ -8,57 +8,11 @@
     android:paddingHorizontal="30dp"
     android:paddingBottom="20dp"
     tools:context=".CheckattendanceActivity">
-    <RelativeLayout
-        android:id="@+id/rl1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:id="@+id/tv_startdate_a"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:importantForAutofill="no"
-            android:layout_marginVertical="20dp"
-            android:hint="@string/start_date"
-            android:inputType="text"
-            />
-        <CalendarView
-            android:id="@+id/cv_startdate_a"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
 
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:importantForAutofill="no"
-            android:layout_margin="10dp"
-            android:src="@drawable/ic_menu_camera"
-            android:contentDescription="@string/cd_showHide"
-            android:layout_alignParentEnd="true" />
-    </RelativeLayout>
-    <RelativeLayout
-        android:id="@+id/rl2"
+    < lecho.lib.hellocharts.view.PieChartView
+        android:id="@+id/chart"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:id="@+id/tv_enddate_a"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginVertical="20dp"
-            android:hint="@string/end_date"
-            android:inputType="textPassword"
-            />
-        <CalendarView
-            android:id="@+id/cv_enddate_a"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:importantForAutofill="no"
-            android:layout_margin="10dp"
-            android:src="@drawable/ic_menu_camera"
-            android:contentDescription="@string/cd_showHide"
-            android:layout_alignParentEnd="true" />
-    </RelativeLayout>
-
+        android:layout_height="match_parent" />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
